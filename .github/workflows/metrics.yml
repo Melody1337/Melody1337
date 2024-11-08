@@ -18,7 +18,7 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
    
-      - name: Achievements
+      -name: Achievements
         if: ${{ success() || failure() }}
         uses: lowlighter/metrics@latest
         with:
